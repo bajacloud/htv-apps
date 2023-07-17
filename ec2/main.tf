@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-06ca3ca175f37dd66"
-  instance_type = "t2.large"
+  instance_type = "t2.medium"
 
   tags = {
     Name = "driftdetectionexample"
