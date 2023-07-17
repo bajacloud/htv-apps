@@ -27,7 +27,7 @@ jobs:
 
       - name: Provision EC2 instance
         run: |
-          cd path/to/terraform/directory
+          cd ec2/
           terraform init
           terraform plan
           terraform apply --auto-approve
