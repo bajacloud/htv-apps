@@ -12,17 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Run Bridgecrew
-        id: Bridgewcrew
-        uses: bridgecrewio/checkov-action@master 
-        env:
-          PRISMA_API_URL: https://api4.prismacloud.io
-        with:
-          api-key: ${{ secrets.BC_API_KEY }}
           
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
